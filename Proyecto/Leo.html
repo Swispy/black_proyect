@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registra tus Datos</title>
+    <link rel="stylesheet" href="/styles/leo.css">
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault();
+            const form = document.querySelector('.formulario-registro');
+            const inputs = form.querySelectorAll('input[required]');
+            let todosCompletos = true;
+
+            inputs.forEach(input => {
+                if (!input.value) {
+                    todosCompletos = false;
+                }
+            });
+
+            if (todosCompletos) {
+                window.location.href = 'ht.html';
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="contenedor-central">
+    <h1>BIENVENIDOS A BLACK PROJECT</h1>
+    
+    <form class="formulario-registro">
+        <h3>REGISTRA TUS DATOS</h3>
+        <input type="text" name="Nombre" placeholder="Nombre" required>
+        <input type="text" name="Apellido" placeholder="Apellido" required>
+        <input type="text" name="Telefono" placeholder="Teléfono" required>
+        <input type="email" name="CorreoElectronico" placeholder="Correo Electrónico" required>
+        <input type="text" name="DocumentoIdentidad" placeholder="Documento de Identidad" required>
+        
+        <button type="button" class="btn-53" onclick="validarFormulario(event);">
+            <div class="original">Ingresar</div>
+            <div class="letters">
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+                <span>R</span>
+                <span>E</span>
+                <span>S</span>
+                <span>A</span>
+                <span>R</span>
+            </div>
+        </button>   
+    </form>
+    
+    <img src="https://www.gifsanimados.org/data/media/1315/leopardo-imagen-animada-0022.gif" alt="Animación de Leopardo">
+</div>
+
+</body>
+</html>

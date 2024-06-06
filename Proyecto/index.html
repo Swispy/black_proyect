@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina Web</title>
+    <link rel="stylesheet" href="styles\StylesIndex.css">
+</head>
+<body>
+    <header class="bg_animate">
+        <div class="header_nav">
+            <div class="contenedor">
+                <h1>Black Proyect</h1>
+            </div>
+        </div>
+
+        <section class="banner contenedor">
+            <div class="banner_title">
+                <h2>Aprende CSS Y HTML en tan solo 5 minutos</h2>
+                <a href="Leo.html" class="btn">
+                    Iniciar Sesión
+                </a>
+            </div>
+            <div class="banner_img">
+                <img src="Arch.png" alt="Descripción de la imagen">
+            </div>
+        </section>
+
+        <div class="Burbujas">
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+            <div class="Burbuja"></div>
+        </div>
+    </header>
+    
+    <script src="/js/Arch.js"></script>
+    <style>
+        *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    
+}
+
+
+
+.bg_animate {
+    width: 100%;
+    height: 100vh;
+
+        background: linear-gradient(to right,
+
+
+        #005C98,
+        #505BDA
+          
+    
+        );
+    
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.header_nav {
+    width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+.header_nav .contenedor {
+
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+padding: 15px;
+
+}
+
+
+
+.header_nav h1 {
+    color: #fff;
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+.header_nav nav a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.banner_title h2{
+ color: #fff;
+ font-size: 30px;
+font-weight: 800;
+margin-bottom: 20px;
+
+
+
+animation-name: hola;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+@keyframes hola {
+
+0% {}
+15% { color: rgb(46, 192, 70);}
+25% { color: chartreuse;}
+50% { color: aqua;}
+75% {color: cadetblue;}
+100% {color: burlywood;}
+
+
+
+}
+
+.banner_title .Llamanos{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display:inline-block;
+    background: #1A2849;
+    padding: 20px;
+}
+
+.banner_img{
+
+
+    animation: img 2.5s linear infinite;
+  
+}
+
+@keyframes img {
+
+
+0% {transform: translateY(0);}
+
+50% {transform: translateY(30px);}
+
+100% {transform: translateY(
+    );}
+
+}
+
+.banner_img img{
+
+    width: 650px;
+    display: block;
+    
+}
+
+.Burbuja{
+
+    background-color: #fff;
+opacity: .3;
+    position: absolute;
+ border-radius: 80px;
+   
+  bottom: 0;
+    
+
+
+    animation: hol 3s linear infinite;
+}
+
+.Burbuja:nth-child(1){
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    left: 1%;
+     animation-delay: 7s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+
+.Burbuja:nth-child(2){
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    left: 15%;
+animation-delay: 9s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+.Burbuja:nth-child(3){
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    left: 20%;
+animation-delay: 1s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+.Burbuja:nth-child(4){
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    left: 35%;
+animation-delay:8s;
+    animation-duration: 3s;
+    opacity: 0;
+   
+}
+
+
+.Burbuja:nth-child(5){
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    left: 45%;
+
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+
+.Burbuja:nth-child(6){
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    left: 55%;
+animation-delay: 5s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+.Burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    left: 65%;
+animation-delay: 9s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+.Burbuja:nth-child(8){
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    left: 75%;
+animation-delay: 5s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+.Burbuja:nth-child(9){
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    left: 85%;
+animation-delay: 1s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+.Burbuja:nth-child(10){
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    left: 95%;
+animation-delay: 1s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+
+
+@keyframes hol{
+
+
+    0% {
+        botttom:0px;
+        opacity: 0;
+    }
+    30%{
+       transform: translateX(50px);
+    }
+
+50%{
+    opacity: .4;
+}
+
+100% { 
+    bottom:100vh;
+opacity: 0;
+}
+    
+
+}
+    </style>
+</body>
+</html>
